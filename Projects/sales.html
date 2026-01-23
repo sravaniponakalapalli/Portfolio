@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Stock Market Crash Analysis | Sravani Ponakalapalli</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<section class="container mt-5 mb-5">
+
+<h1 class="project-title">Sales Performance Analysis: YTD vs PYTD</h1>
+
+<hr>
+
+<h3>Executive Summary</h3>
+<p>
+  This project analyzes year-to-date (YTD) versus prior year-to-date (PYTD) sales performance using an interactive Power BI dashboard.
+  The report enables business users to compare current performance against historical benchmarks across sales, gross profit,
+  and quantity metrics. Advanced DAX time-intelligence, switch measures, and conditional formatting are used to highlight trends,
+  variances, and performance gaps to support data-driven decision-making.
+</p>
+
+<div class="dashboard-row">
+  <img src="../images/sales1.png" alt="Sales Dashboard 1" class="dashboard-half">
+</div>
+
+<h3>Business Problem</h3>
+<p>
+  Businesses often track YTD performance but lack clear visibility into how current results compare with the same period in the prior year.
+  Without PYTD comparisons, it becomes difficult to identify growth trends, seasonal impacts, or underperformance.
+  The challenge was to design a single, intuitive dashboard that dynamically compares YTD and PYTD metrics while enabling users
+  to switch between key business measures.
+</p>
+
+<h3>Methodology</h3>
+<ul>
+  <li>Prepared and cleaned transactional sales data using Power Query.</li>
+  <li>Built a robust data model with fact and dimension tables.</li>
+  <li>Created a continuous Date table to support accurate time-intelligence calculations.</li>
+  <li>Developed core DAX measures:
+    <ul>
+      <li>Sales</li>
+      <li>Gross Profit</li>
+      <li>Quantity</li>
+      <li>YTD and PYTD calculations</li>
+      <li>YTD vs PYTD variance</li>
+    </ul>
+  </li>
+  <li>Implemented switch measures to dynamically toggle metrics across the report.</li>
+  <li>Applied conditional formatting to highlight positive and negative performance changes.</li>
+</ul>
+
+<h3>Dashboard Features</h3>
+
+<h4>Treemap – Bottom 10 Countries (YTD vs PYTD)</h4>
+<ul>
+  <li><strong>Purpose:</strong> To pinpoint underperforming geographical areas.</li>
+  <li><strong>Visual Choice:</strong> A Treemap was selected for its ability to represent hierarchical data and relative contribution, making it easy to identify countries driving overall decline.</li>
+  <li><strong>Key Insight:</strong> Filtered to display the bottom 10 countries based on YTD vs PYTD variance, enabling quick identification of regions with significant sales or gross profit drops.</li>
+</ul>
+<img src="../images/sales3.png" class="dashboard-small">
+
+<h4>Waterfall Chart – Contribution to Variance</h4>
+<ul>
+  <li><strong>Purpose:</strong> To break down the overall YTD vs PYTD difference into contributing factors.</li>
+  <li><strong>Visual Choice:</strong> A Waterfall Chart clearly shows how positive and negative changes accumulate from the starting value to the final variance.</li>
+  <li><strong>Key Insight:</strong> Users can drill down by country and product category to understand which segments are driving growth or decline.</li>
+</ul>
+<img src="../images/sales4.png" class="dashboard-small">
+
+<h4>Line & Stacked Column Chart – Monthly Performance</h4>
+<ul>
+  <li><strong>Purpose:</strong> To analyze monthly and quarterly performance trends and compare current year results against the prior year.</li>
+  <li><strong>Visual Choice:</strong> A combination of stacked columns (YTD by product type) and a line (PYTD) allows direct visual comparison within the same chart.</li>
+  <li><strong>Key Insight:</strong> Helps identify periods where current year performance deviates from the prior year, with product-level context.</li>
+</ul>
+<img src="../images/sales5.png" class="dashboard-small">
+
+<h4>Scatter Chart with Zoom Slider – Account Profitability & Quantity</h4>
+<ul>
+  <li><strong>Purpose:</strong> To segment accounts based on profitability and sales or quantity performance.</li>
+  <li><strong>Visual Choice:</strong> A Scatter Chart effectively reveals relationships, clusters, and outliers, while the zoom slider helps navigate dense data points.</li>
+  <li><strong>Key Insight:</strong> Identifies:
+    <ul>
+      <li>High sales/quantity but low GP% accounts (profitability risk)</li>
+      <li>Low sales/quantity but high GP% accounts (growth opportunities)</li>
+    </ul>
+    Average lines for GP% and Sales/Quantity provide clear benchmarks for segmentation.
+  </li>
+</ul>
+<img src="../images/sales6.png" class="dashboard-small">
+
+<h3>Results</h3>
+<ul>
+  <li>Identified regions and products contributing most to performance decline or growth.</li>
+  <li>Highlighted key variance drivers between current and prior year performance.</li>
+  <li>Enabled dynamic comparison across sales, profit, and quantity metrics.</li>
+  <li>Improved visibility into performance trends using interactive visuals.</li>
+</ul>
+
+<h3>Business Recommendations</h3>
+<ul>
+  <li>Focus on underperforming regions and products identified through variance analysis.</li>
+  <li>Use PYTD comparisons to distinguish seasonality from true performance issues.</li>
+  <li>Leverage profitability insights to optimize pricing and cost strategies.</li>
+  <li>Adopt similar dashboards for monthly, quarterly, and regional reviews.</li>
+</ul>
+
+<h3>Skills & Tools Used</h3>
+<ul>
+  <li>Power BI</li>
+  <li>DAX (Time-Intelligence & Switch Measures)</li>
+  <li>Power Query (ETL)</li>
+  <li>Data Modeling</li>
+  <li>Business Performance Analysis</li>
+  <li>Dashboard Design & Storytelling</li>
+</ul>
+
+<h3>Conclusion</h3>
+<p>
+  This Sales YTD vs PYTD dashboard provides a clear and dynamic view of business performance by combining time-based comparisons,
+  profitability metrics, and interactive analysis. It empowers stakeholders to quickly identify trends, risks, and opportunities,
+  demonstrating the effectiveness of Power BI as a strategic decision-support tool.
+</p>
+
+  <!-- <h3>Dashboard Preview</h3>
+  <img src="../images/bank-loan-dashboard.png" alt="Bank Loan Dashboard" width="100%"> -->
+
+  <h3>Project Links</h3>
+  <p>
+    <a href="https://github.com/sravaniponakalapalli/Sales-YTD-Vs-PYTD" class="btn btn-primary py-3 px-4" target="_blank">
+      View GitHub Repository
+    </a>
+  </p>
+
+  <br>
+  <a href="../index.html">← Back to Portfolio</a>
+
+</section>
+
+</body>
+</html>
