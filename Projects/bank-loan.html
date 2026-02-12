@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bank Loan Analysis | Sravani Ponakalapalli</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<div class="brand-top">
+  <img src="../images/Profile.png" alt="Sravani" class="brand-photo">
+  <div class="brand-text">
+    <span class="brand-name">Sravani Ponakalapalli</span>
+    <!-- <span class="brand-sub">by Sravani Ponakalapalli</span> -->
+  </div>
+</div>
+
+
+<section class="container mt-5 mb-5">
+
+ <h1 class="project-title">Bank Loan Analysis</h1>
+<!-- <p class="project-subtitle">
+  Risk, Drawdowns & Long-Term Market Behavior Insights
+</p> -->
+
+<!-- <h1>Stock Market Crash Analysis</h1> -->
+  <!-- <p><strong>Role:</strong> Data Analyst</p> -->
+  <!-- <p><strong>Tools:</strong> Power BI, Excel</p> -->
+
+  <hr>
+
+  <h3>Executive Summary</h3>
+  <p>
+    This project presents an interactive Bank Loan Analysis dashboard built using Power BI to evaluate loan applications, funded amounts, 
+    repayment performance, and credit risk. The dashboard provides a consolidated view of good vs bad loans, borrower characteristics, loan purposes,
+     and repayment trends to support data-driven lending and risk management decisions.
+  </p>
+  <!-- For two Dashboards -->
+ <div class="dashboard-row">
+  <img src="../images/BLD1.png"
+       alt="Dashboard 1"
+       class="dashboard-half">
+
+  <img src="../images/BLD2.png"
+       alt="Dashboard 2"
+       class="dashboard-half">
+</div>
+
+
+<!-- For Single dashboard -->
+<!-- <img src="../images/stock-d1.png"
+     alt="Sensex Dashboard"
+     class="dashboard-single">-->
+
+
+  <h3>Business Problem</h3>
+  <ul>
+    <li>Banks and financial institutions need to continuously monitor their loan portfolio health to reduce defaults and improve profitability. Key challenges include:
+     <ul>
+    <li>Identifying high-risk loans and borrowers</li>
+    <li>Tracking good vs bad loan performance</li>
+    <li>Monitoring funded vs received amounts</li>
+    <li>Understanding how factors like loan purpose, term, grade, employment length, and geography impact repayment behavior</li>
+    </ul>  
+    </li>
+    </ul>
+   <p>Without a centralized analytical view, decision-makers lack visibility into credit risk exposure and portfolio performance.</p>
+
+  <h3>Methodology</h3>
+  <ul>
+    <li>Cleaned and prepared historical loan data including loan amount, interest rate, DTI, loan status, borrower profile, and repayment details.</li>
+    <li>Created DAX measures to calculate:
+    <ul>
+    <li>Total Loan Applications</li>
+    <li>Total Funded Amount</li>
+    <li>Total Received Amount</li>
+    <li>Average Interest Rate</li>
+    <li>Average Debt-to-Income (DTI)</li>
+    <li>Month-over-Month (MoM) and Month-to-Date (MTD) metrics</li>
+    </ul>
+    </li>
+    <li>Classified loans into Good Loans (Fully Paid, Current) and Bad Loans (Charged Off).</li>
+    <li>Designed a multi-page Power BI dashboard (Summary, Overview, Details) for different analytical needs.</li>
+    
+
+<h3>Dashboard Features</h3>
+
+<ul>
+  <li><strong>Summary Page</strong>
+    <ul>
+      <!-- <li> -->
+        <img src="../images/BLD1.png" alt="Summary Dashboard" class="dashboard-small">
+      <!-- </li> -->
+      <li>High-level KPIs: Total Applications, Funded Amount, Received Amount, Avg Interest Rate, Avg DTI</li>
+      <li>Good vs Bad Loan comparison</li>
+    </ul>
+  </li>
+
+  <li><strong>Overview Page</strong>
+    <ul>
+      <!-- <li> -->
+        <img src="../images/BLD2.png" alt="Overview Dashboard" class="dashboard-small">
+      <!-- </li> -->
+      <li>Loan trends by month</li>
+      <li>Loan distribution by state, purpose, term, employment length, and home ownership</li>
+      <li>Interactive slicers for state, grade, and purpose</li>
+    </ul>
+  </li>
+
+  <li><strong>Details Page</strong>
+    <ul>
+      <!-- <li> -->
+        <img src="../images/BLD3.png" alt="Details Dashboard" class="dashboard-small">
+      <!-- </li> -->
+      <li>Transaction-level loan details</li>
+      <li>Drill-down capability for individual loan analysis</li>
+    </ul>
+  </li>
+</ul>
+
+
+<h3>Results</h3>
+  <ul>
+    <li>Identified that good loans account for the majority of funded and received amounts, indicating overall portfolio stability.</li>
+    <li>Revealed loan purposes and borrower segments associated with higher default rates.</li>
+    <li>Highlighted the relationship between interest rates, DTI, and loan performance.</li>
+    <li>Enabled quick identification of risk-heavy loan categories and regions.</li>
+  </ul>
+
+<h3>Business Recommendations</h3>
+  <ul>
+    <li>Strengthen credit evaluation for borrower segments with high DTI and higher interest rates.</li>
+    <li>Monitor charged-off loans closely to reduce future NPAs.</li>
+    <li>Adjust lending strategies based on loan purpose and employment length risk patterns.</li>
+    <li>Use dashboard insights for early risk detection and portfolio optimization.</li>
+    <li>Regularly track MoM and MTD metrics to respond quickly to performance changes.</li>
+  </ul>
+
+  <h3>Skills & Tools Used</h3>
+  <ul>
+    <li>Power BI</li>
+    <li>DAX (Measures & Calculated Columns)</li>
+    <li>Data Modeling</li>
+    <li>Data Cleaning & Transformation</li>
+    <li>Financial & Credit Risk Analysis</li>
+    <li>KPI Development</li>
+    <li>Dashboard Design & Business Storytelling</li>
+  </ul>
+
+  <h3>Conclusion</h3>
+  <p>This Bank Loan Analysis dashboard transforms complex loan data into clear, actionable insights. By combining portfolio performance metrics with borrower and loan-level analysis, the solution supports better lending decisions, improved risk management, and enhanced operational transparency for financial institutions.
+  </p>
+
+  <!-- <h3>Dashboard Preview</h3>
+  <img src="../images/bank-loan-dashboard.png" alt="Bank Loan Dashboard" width="100%"> -->
+
+  <h3>Project Links</h3>
+  <p>
+    <a href="https://github.com/sravaniponakalapalli/Bank-Loan-Analysis" class="btn btn-primary py-3 px-4" target="_blank">
+      View GitHub Repository
+    </a>
+  </p>
+
+  <br>
+  <a href="../index.html">← Back to Portfolio</a>
+
+</section>
+
+</body>
+</html>
