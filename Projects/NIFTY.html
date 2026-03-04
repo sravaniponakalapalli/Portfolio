@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NIFTY Risk & Return Dashboard | Sravani Ponakalapalli</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<div class="brand-top">
+  <img src="../images/Profile.png" alt="Sravani" class="brand-photo">
+  <div class="brand-text">
+    <span class="brand-name">Sravani Ponakalapalli</span>
+  </div>
+</div>
+
+<section class="container mt-5 mb-5">
+
+  <h1 class="project-title">NIFTY Market Performance & Risk Dashboard</h1>
+  <hr>
+
+<h3>Executive Summary</h3>
+  <p>
+    This project analyzes historical Nifty stock data to evaluate performance, volatility, drawdowns, 
+    and risk-adjusted returns using an interactive Power BI dashboard. The goal is to help investors understand 
+    not just which stocks are generating returns, but how much risk is involved in achieving those returns.
+    The dashboard combines return metrics, volatility measures, Sharpe Ratio, market breadth, and drawdown analysis 
+    to provide a complete view of market health and investment efficiency.
+  </p>
+
+<div class="dashboard-row">
+  <img src="../images/Nifty1.png"
+       alt="Dashboard 1"
+       class="dashboard-half">
+</div>
+
+ <!-- Introduction -->
+  <h3>What This Dashboard Is About</h3>
+  
+  <p>
+    This dashboard analyzes Nifty stocks to answer three important investment questions:
+  </p>
+  <ul>
+    <li><strong>Which stocks are performing well?</strong></li>
+    <li><strong>How risky are they?</strong></li>
+    <li><strong>Is the return worth the risk?</strong></li>
+  </ul>
+  <p>
+    Instead of looking only at returns, this dashboard combines performance, volatility, drawdowns, 
+    and risk-adjusted metrics to give a complete view of the market.
+  </p>
+
+  <hr>
+
+<hr>
+
+<h3>Project Objective</h3>
+<p>
+The objective of this project is to analyze Nifty stocks by combining return and risk metrics 
+into a single interactive dashboard. The goal is to move beyond simple return analysis and 
+evaluate whether stock performance is justified by the level of risk taken.
+</p>
+<p>
+This dashboard helps investors compare stocks using volatility, drawdowns, 
+and risk-adjusted performance metrics.
+</p>
+
+<hr>
+
+<h3>Business Problem</h3>
+  <p>
+    Investors often focus only on returns when selecting stocks, ignoring key risk indicators such as volatility 
+    and drawdowns. This can lead to choosing high-return stocks that carry excessive risk.
+    The challenge was to create a single, intuitive dashboard that answers three core investor questions:
+  </p>
+
+<h3>Target Audience</h3>
+<ul>
+  <li>Retail Investors</li>
+  <li>Financial Analysts</li>
+  <li>Portfolio Managers</li>
+</ul>
+
+  <ul>
+    <li>Which stocks are performing well?</li>
+    <li>How risky are they?</li>
+    <li>Is the return worth the risk?</li>
+  </ul>
+
+    <h3>Dashboard Features & What Each Chart Answers</h3>
+
+  <!-- Risk vs Return -->
+  <h4>1. Risk vs Return Analysis</h4>
+  <p>
+    This scatter plot compares stock returns with volatility (risk). 
+    Each dot represents one stock.
+  </p>
+  <ul>
+    <li>X-axis = Volatility (Risk)</li>
+    <li>Y-axis = Period Return</li>
+  </ul>
+  <p>
+    Stocks in the top-left area (high return, low risk) are ideal.
+    Stocks in the bottom-right (low return, high risk) may not be attractive.
+  </p>
+  <p><strong>What this tells us:</strong> Whether higher returns are coming with higher risk.</p>
+
+  <img src="../images/Nifty2.png" alt="Risk vs Return Chart" class="dashboard-small">
+
+  <hr>
+
+  <!-- Sharpe Ratio -->
+  <h4>2. Sharpe Ratio – Risk Adjusted Performance</h4>
+  <p>
+    The Sharpe Ratio measures how much return a stock generates for each unit of risk taken.
+  </p>
+  <ul>
+    <li>Higher Sharpe Ratio = Better risk efficiency</li>
+    <li>Lower Sharpe Ratio = Return not worth the risk</li>
+  </ul>
+  <p>
+    This allows fair comparison between stocks with different volatility levels.
+  </p>
+  <p><strong>What this tells us:</strong> Which stock gives the best return for the risk taken.</p>
+
+  <img src="../images/Nifty4.png" alt="Sharpe Ratio Chart" class="dashboard-small">
+
+  <hr>
+
+  <!-- Market Breadth -->
+  <h4>3. Market Breadth Indicator</h4>
+  <p>
+    Market Breadth shows the percentage of stocks that are positive on the latest trading day.
+  </p>
+  <ul>
+    <li>High Breadth = Most stocks are rising</li>
+    <li>Low Breadth = Gains are concentrated in few stocks</li>
+  </ul>
+  <p>
+    Strong breadth indicates a healthy market.
+  </p>
+  <p><strong>What this tells us:</strong> Whether the market movement is broad-based or narrow.</p>
+
+  <img src="../images/Nifty8.png" alt="Market Breadth KPI" class="dashboard-small">
+
+  <hr>
+
+  <!-- Drawdown -->
+  <h4>4. Drawdown Analysis</h4>
+  <p>
+    Drawdown measures how much a stock has fallen from its previous peak.
+  </p>
+  <ul>
+    <li>Shows downside risk</li>
+    <li>Highlights crash impact</li>
+  </ul>
+  <p>
+    This helps investors understand worst-case loss scenarios.
+  </p>
+  <p><strong>What this tells us:</strong> How much an investor could have lost during downturns.</p>
+
+  <img src="../images/Nifty3.png" alt="Drawdown Chart" class="dashboard-small">
+
+  <hr>
+
+  <!-- Market Overview -->
+  <h4>5. Market Return & Market Volatility</h4>
+  <p>
+    These KPIs summarize overall market performance.
+  </p>
+  <ul>
+    <li><strong>Market Return %</strong> – Average return of selected stocks</li>
+    <li><strong>Market Volatility</strong> – Average risk level</li>
+  </ul>
+  <p>
+    Together, they show whether the market is generating strong returns and how stable those returns are.
+  </p>
+
+  <img src="../images/Nifty6.png" alt="Market KPIs" class="dashboard-small">
+
+  <hr>
+
+  <!-- Best and Worst Performers -->
+  <h4>6. Best & Worst Performers</h4>
+  <p>
+    The dashboard dynamically identifies:
+  </p>
+  <ul>
+    <li>Top-performing stock</li>
+    <li>Lowest-performing stock</li>
+  </ul>
+  <p>
+    This makes it easy to quickly spot leaders and laggards within the selected period.
+  </p>
+
+  <img src="../images/Nifty7.png" alt="Best & Worst Performers" class="dashboard-small">
+
+  <hr>
+
+  <!-- Key Takeaways -->
+  <h3>Key Takeaways</h3>
+  <ul>
+    <li>High returns often come with higher volatility.</li>
+    <li>Some stocks provide strong returns with manageable risk.</li>
+    <li>Sharpe Ratio helps identify efficient investments.</li>
+    <li>Market Breadth reveals overall market participation.</li>
+    <li>Drawdown analysis highlights the importance of risk management.</li>
+  </ul>
+
+  <hr>
+
+  <!-- Why This Dashboard Is Effective -->
+  <h3>Why This Dashboard Is Effective</h3>
+  <p>
+    This dashboard does not focus only on performance. 
+    It balances return, risk, and downside exposure in one unified analytical view.
+  </p>
+  <ul>
+    <li>Combines multiple financial metrics</li>
+    <li>Supports dynamic time-based analysis</li>
+    <li>Helps investors compare stocks fairly</li>
+    <li>Encourages risk-aware decision making</li>
+  </ul>
+
+  <hr>
+
+  <!-- Conclusion -->
+  <h3>Conclusion</h3>
+  <p>
+    The Nifty Risk & Return Dashboard demonstrates how financial data can be transformed into 
+    actionable insights using Power BI. By integrating performance, volatility, drawdowns, and 
+    risk-adjusted metrics, the dashboard provides a complete investment evaluation framework.
+  </p>
+
+  <h3>Skills & Tools Used</h3>
+  <ul>
+    <li>Power BI</li>
+    <li>DAX (Financial Measures & Calculations)</li>
+    <li>Financial Time-Series Analysis</li>
+    <li>Data Visualization & Dashboard Design</li>
+  </ul>
+
+<h3>Project Links</h3>
+  <p>
+    <a href="https://github.com/sravaniponakalapalli/NIFTY-Market-Performance-Risk-Dashboard" class="btn btn-primary py-3 px-4" target="_blank">
+      View GitHub Repository
+    </a>
+  </p>
+
+
+  <br>
+  <a href="../index.html">← Back to Portfolio</a>
+
+</section>
+
+</body>
+</html>

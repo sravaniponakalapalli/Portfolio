@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Telecom customer churn Analysis | Sravani Ponakalapalli</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<div class="brand-top">
+  <img src="../images/Profile.png" alt="Sravani" class="brand-photo">
+  <div class="brand-text">
+    <span class="brand-name">Sravani Ponakalapalli</span>
+    <!-- <span class="brand-sub">by Sravani Ponakalapalli</span> -->
+  </div>
+</div>
+
+<section class="container mt-5 mb-5">
+
+<h1 class="project-title">Telecom Churn Analysis – NexaTel Communications</h1>
+<hr>
+<p>This case study presents a professional end-to-end analysis of customer churn in a telecom company. We explore the business problem, data understanding, SQL analysis, Python modeling, Power BI visualization, and final business insights in a clear, recruiter-friendly manner.</p>
+
+<!-- Business Problem -->
+<div class="section">
+<h2>Business Problem</h2>
+<p>Customer churn is one of the biggest challenges for telecom companies. Losing customers not only reduces monthly revenue but also increases marketing costs to acquire new customers. NexaTel wanted to identify:</p>
+<ul>
+    <li>Which customers are at the highest risk of churn</li>
+    <li>Revenue exposure due to potential churn</li>
+    <li>Key drivers influencing churn</li>
+    <li>Strategies to reduce churn and protect revenue</li>
+</ul>
+<p>The overall churn rate was <span class="highlight">18.43%</span> with monthly contracts showing the highest risk.</p>
+</div>
+
+<!-- Data Understanding -->
+<div class="section">
+<h2>Data Understanding</h2>
+<p>The dataset included customer subscriptions, support tickets, payments, service downtime, and plan types. Key columns included:</p>
+<ul>
+    <li><strong>customer_id:</strong> Unique identifier for each customer</li>
+    <li><strong>contract_type:</strong> Monthly, 1-Year, 2-Year</li>
+    <li><strong>plan_type:</strong> Basic, Premium, Unlimited</li>
+    <li><strong>tenure_months:</strong> Customer duration in months</li>
+    <li><strong>churn_flag:</strong> Indicates if a customer churned (1) or not (0)</li>
+    <li><strong>total_tickets:</strong> Total support tickets raised</li>
+    <li><strong>downtime_hours:</strong> Total service downtime reported</li>
+    <li><strong>late_payment_count:</strong> Number of late payments</li>
+</ul>
+<p>Missing data was handled thoughtfully: average satisfaction score nulls were imputed, and downtime hours with missing values were addressed based on mean values of similar customers.</p>
+</div>
+
+<!-- SQL Analysis -->
+<div class="section">
+<h2>SQL Analysis</h2>
+<p>SQL was used to extract and aggregate customer data:</p>
+<ul>
+    <li>Joined subscription and support ticket tables to calculate churned customer counts</li>
+    <li>Aggregated churn by contract type, tenure, and region</li>
+    <li>Calculated monthly revenue lost due to churn for each segment</li>
+    <li>Created cohort tables to analyze first-year vs long-term customer churn</li>
+   
+  <a href="https://github.com/sravaniponakalapalli/Telecom-Churn-Analysis/blob/main/Telecom%20Churn%20Analysis.sql" 
+     target="_blank" 
+     class="sql-link">
+     View the SQL query used for analysis
+  </a>
+
+</ul>
+<p>For example, we found that monthly contract customers in their first 12 months had a churn rate of <span class="highlight">34%</span> and contributed significantly to revenue risk.</p>
+</div>
+
+<!-- Python & Statistics -->
+<div class="section">
+<h2>Python Modeling & Statistical Analysis</h2>
+<p>Python was used to perform data cleaning, modeling, and risk prediction:</p>
+<ul>
+    <li>Missing values were imputed and categorical variables encoded</li>
+    <li>Logistic regression and Random Forest models were used to predict churn probability</li>
+    <li>Model evaluation included accuracy, recall, and feature importance</li>
+    <li>Key churn drivers identified: Monthly contract, service downtime, late payments, and tenure</li>
+    <li>Revenue-at-risk analysis was performed for the top 1000 high-risk customers, showing potential revenue protection of $1.37M</li>
+
+ <a href="https://github.com/sravaniponakalapalli/Telecom-Churn-Analysis/blob/main/Telecom%20Model.ipynb" 
+     target="_blank" 
+     class="sql-link">
+     View the Python code used for analysis
+  </a>
+
+</ul>
+</div>
+
+<!-- Power BI Dashboard -->
+<div class="section">
+<h2>Power BI Dashboard</h2>
+<p>A 3-page professional dashboard was created to present insights visually:</p>
+
+<h3>Page 1: Executive Overview</h3>
+<ul>
+    <li>KPI Cards: Overall churn, monthly churn, high-risk customers, annual revenue at risk</li>
+    <li>Bar charts and heatmaps for churn by contract and tenure</li>
+    <li>Text box summarizing first-year risk insights</li>
+</ul>
+
+<img src="../images/Telecom1.png" alt="Summary Dashboard" class="dashboard-small">
+
+<h3>Page 2: Behavioral & Service Risk Drivers</h3>
+<ul>
+    <li>Visuals showing churn by downtime bins, late payment counts, plan type, and region</li>
+    <li>Scatter plots showing churn probability distribution</li>
+    <li>Text box summarizing behavioral insights for decision-making</li>
+</ul>
+
+<img src="../images/Telecom2.png" alt="Summary Dashboard" class="dashboard-small">
+
+<h3>Page 3: Predictive Modeling & Strategy</h3>
+<ul>
+    <li>Feature importance visualization for top churn drivers</li>
+    <li>Revenue protection simulation with adjustable retention success rate</li>
+    <li>Text box summarizing actionable retention strategies</li>
+</ul>
+
+<img src="../images/Telecom3.png" alt="Summary Dashboard" class="dashboard-small">
+
+</div>
+
+<!-- Key Insights -->
+<div class="section">
+<h2>Key Insights</h2>
+<div class="kpi">
+<ul>
+    <li>Payment delays and service downtime are major churn drivers.</li>
+    <li>Monthly contract customers are most sensitive to service issues.</li>
+    <li>First-year customers have the highest churn risk.</li>
+    <li>Targeted retention strategies could protect $1.37M in potential revenue.</li>
+</ul>
+</div>
+</div>
+
+<!-- Conclusion -->
+<div class="section">
+<h2>Conclusion</h2>
+<p>This end-to-end case study demonstrates how SQL, Python, and Power BI can be combined to understand churn, predict high-risk customers, quantify revenue impact, and recommend actionable strategies. By presenting clean dashboards, executive insights, and financial impact, this project showcases the skills needed for a professional data analyst or business intelligence role.</p>
+<p>All insights are actionable and designed for decision-makers. Recruiters and hiring managers can clearly see both technical and business impact.</p>
+</div>
+
+</div>
+
+    
+
+
+  <!-- <h3>Dashboard Preview</h3>
+  <img src="../images/bank-loan-dashboard.png" alt="Bank Loan Dashboard" width="100%"> -->
+
+  <h3>Project Links</h3>
+  <p>
+    <a href="https://github.com/sravaniponakalapalli/Telecom-Churn-Analysis" class="btn btn-primary py-3 px-4" target="_blank">
+      View GitHub Repository
+    </a>
+  </p>
+
+  <br>
+  <a href="../index.html">← Back to Portfolio</a>
+
+</section>
+
+</body>
+</html>
