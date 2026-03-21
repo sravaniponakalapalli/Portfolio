@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Revenue Leakage Analysis | Sravani Ponakalapalli</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<div class="brand-top">
+  <img src="../images/Profile.png" alt="Sravani" class="brand-photo">
+  <div class="brand-text">
+    <span class="brand-name">Sravani Ponakalapalli</span>
+  </div>
+</div>
+
+<section class="container mt-5 mb-5">
+
+<h1 class="project-title">Revenue Leakage & Profitability Analysis – E-commerce</h1>
+<hr>
+
+<p>This project presents an end-to-end analysis of revenue leakage in an e-commerce business. The goal is to identify hidden profit losses caused by pricing strategies, discounts, and operational inefficiencies using SQL and Power BI.</p>
+
+<!-- Business Problem -->
+<div class="section">
+<h2>Business Problem</h2>
+<p>Companies often generate strong revenue but still experience profit loss due to inefficient pricing, excessive discounts, and high operational costs. This project aims to identify:</p>
+<ul>
+    <li>Which products are generating losses</li>
+    <li>Impact of discounts on profitability</li>
+    <li>Regions contributing to revenue and profit</li>
+    <li>Operational factors reducing profit (e.g., shipping cost)</li>
+</ul>
+<p>The business generated <span class="highlight">$23M revenue</span> with an overall <span class="highlight">34% profit margin</span>.</p>
+</div>
+
+<!-- Data Understanding -->
+<div class="section">
+<h2>Data Understanding</h2>
+<p>A synthetic e-commerce dataset was generated to simulate real-world business operations.</p>
+
+<ul>
+    <li><strong>order_id:</strong> Unique order identifier</li>
+    <li><strong>product_name:</strong> Product purchased</li>
+    <li><strong>category:</strong> Product category</li>
+    <li><strong>revenue:</strong> Sales value</li>
+    <li><strong>profit:</strong> Profit per order</li>
+    <li><strong>discount:</strong> Discount applied</li>
+    <li><strong>shipping_cost:</strong> Delivery cost</li>
+    <li><strong>state:</strong> Order location</li>
+</ul>
+
+<p>Data cleaning included fixing inconsistent state names, validating numerical values, and ensuring data quality before analysis.</p>
+</div>
+
+<!-- SQL Analysis -->
+<div class="section">
+<h2>SQL Analysis</h2>
+<p>SQL was used to analyze revenue, profit, and identify leakage drivers:</p>
+
+<ul>
+    <li>Calculated total revenue, profit, and profit margin</li>
+    <li>Analyzed revenue and profit by category</li>
+    <li>Identified loss-making products</li>
+    <li>Evaluated discount impact on profitability</li>
+    <li>Analyzed regional performance</li>
+    <li>Investigated shipping cost impact on profit</li>
+
+    <a href="https://github.com/sravaniponakalapalli/Revenue-Leakage-Analysis" 
+       target="_blank" 
+       class="sql-link">
+       View SQL queries used for analysis
+    </a>
+</ul>
+
+<p>For example, orders with high shipping costs showed significantly lower average profit, indicating operational inefficiencies.</p>
+</div>
+
+<!-- Power BI Dashboard -->
+<div class="section">
+<h2>Power BI Dashboard</h2>
+<p>An interactive dashboard was built to visualize business performance and leakage areas.</p>
+
+<ul>
+    <li>KPI Cards: Revenue, Profit, Profit Margin, Orders</li>
+    <li>Revenue by Category</li>
+    <li>Profit Margin by Category</li>
+    <li>Loss Making Products</li>
+    <li>Discount Impact on Profit</li>
+    <li>Shipping Cost Impact on Profitability</li>
+</ul>
+
+<img src="../images/revenue lekage dashboard.png" alt="Revenue Dashboard" class="dashboard-small">
+
+</div>
+
+<!-- Key Insights -->
+<div class="section">
+<h2>Key Insights</h2>
+<div class="kpi">
+<ul>
+    <li>Electronics generates the highest revenue.</li>
+    <li>Furniture delivers the highest profit margin.</li>
+    <li>Several products consistently generate negative profit.</li>
+    <li>High shipping costs significantly reduce profitability.</li>
+    <li>Discounts reduce profit margin efficiency.</li>
+</ul>
+</div>
+</div>
+
+<!-- Conclusion -->
+<div class="section">
+<h2>Conclusion</h2>
+<p>This project demonstrates how SQL and Power BI can be used to uncover hidden revenue leakage and improve business profitability. By analyzing pricing strategies, product performance, and operational costs, businesses can make data-driven decisions to optimize profit.</p>
+</div>
+
+<h3>Project Links</h3>
+<p>
+  <a href="https://github.com/sravaniponakalapalli/Revenue-Leakage-Analysis" 
+     class="btn btn-primary py-3 px-4" 
+     target="_blank">
+    View GitHub Repository
+  </a>
+</p>
+
+<br>
+<a href="../index.html">← Back to Portfolio</a>
+
+</section>
+
+</body>
+</html>
